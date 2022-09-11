@@ -85,10 +85,7 @@ public class IsBinarySearchTree {
         }
 
         //判断当前是否为false，左边最小是否大于当前，右边最大是否小于当前，左右是否false
-        boolean isBST = true;
-        if (left!=null && (!left.isBST || left.max >= head.value)) {
-            isBST = false;
-        }
+        boolean isBST = left == null || (left.isBST && left.max < head.value);
         if (right!=null && (!right.isBST || head.value>= right.min)) {
             isBST = false;
         }

@@ -44,7 +44,7 @@ public class IsCompleteTree {
             if (r != null){
                 queue.add(r);
             }
-            if (l != null || r == null){
+            if (l == null || r == null){
                 leaf = true;
             }
         }
