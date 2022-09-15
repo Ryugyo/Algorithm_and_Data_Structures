@@ -90,10 +90,10 @@ public class TrieTree {
             int index = 0;
 
             //只需要遍历整个字符串，然后从root顺着往下
-            for(int i =0; i<chs.length; i++){
-                index = chs[i] - 'a';
+            for (char ch : chs) {
+                index = ch - 'a';
                 //如果当前node的字母位置是null说明没有通往字母的路，返回0
-                if (node.nexts[index] == null){
+                if (node.nexts[index] == null) {
                     return 0;
                 }
                 //一直沿着字符串的字母走下去
