@@ -13,7 +13,7 @@ public class HanoiTower {
         leftToRight(n);
     }
 
-    //从左移动到右.
+    //从左移动到右
     public static void leftToRight(int n){
         if (n==1){
             System.out.println("Move 1 from left to right");
